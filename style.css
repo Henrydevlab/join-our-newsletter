@@ -1,0 +1,150 @@
+:root {
+    --color-white: #ffffff;
+    --color-bg: #ffffff;
+    --color-input-bg: #f9fafb;
+    --color-text-main: #111827;
+    --color-text-muted: #6b7280;
+    --color-primary: #3151d3;
+    --color-primary-hover: #2541b3;
+    --font-family: 'Inter', sans-serif;
+    --shadow-main: 0px 20px 30px 0px rgba(0, 0, 0, 0.03), 0px 8px 12px 0px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    line-height: 1.5;
+}
+
+.newsletter-wrapper {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 24px;
+}
+
+.title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -0.03em;
+}
+
+.description {
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-container {
+    background-color: var(--color-white);
+    padding: 40px;
+    box-shadow: var(--shadow-main);
+    width: 100%;
+    max-width: 520px;
+    border-radius: 20px;
+}
+
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid #e5e7eb;
+    background-color: var(--color-input-bg);
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 1rem;
+    text-align: center;
+    outline: none;
+}
+
+.btn-subscribe {
+    width: 100%;
+    padding: 18px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.privacy-notice {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.author-info {
+    margin-top: 64px;
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+/* MOBILE EXACT MATCH (412px design) */
+@media (max-width: 480px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+        /* Forces line 1: Keep up...offers! / Line 2: We introduce...stay tuned to / Line 3: snag...you. */
+        max-width: 35ch; 
+    }
+
+    .form-container {
+        padding: 32px 24px;
+    }
+
+    .privacy-notice {
+        text-align: left; 
+        /* Match specific break: 'you any spam.' on line 2 */
+        max-width: 28ch; 
+        margin: 0 auto;
+        line-height: 1.4;
+    }
+}
