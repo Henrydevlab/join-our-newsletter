@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Join Our Newsletter | devChallenges</title>
+    <meta name="title" content="Join Our Newsletter | devChallenges">
+    <meta name="description" content="Stay updated with our latest weekly collections and exclusive deals. Join our community today!">
 
-    <link
-      rel="icon"
-      href="resources/favicon.ico"
-      type="image/x-icon"
-      sizes="96x96"
-    />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://henrydevlab.github.io/join-our-newsletter/">
+    <meta property="og:title" content="Join Our Newsletter | devChallenges">
+    <meta property="og:description" content="Weekly collections and exclusive deals delivered to your inbox.">
+    <meta property="og:image" content="thumbnail.jpg">
 
-    <title>Join Our Newsletter | devChallenges.io</title>
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96">
 
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      body {
-        height: 100vh;
-      }
+    <main class="newsletter-wrapper">
+        <img src="resources/favicon.ico" alt="Company Logo" class="logo-icon" aria-hidden="true">
+        
+        <h1 class="title">Join our newsletter</h1>
+        
+        <p class="description">
+            Keep up with our latest collections, exclusive deals, and special offers! 
+            We introduce a new collection every week, so stay tuned to snag the hottest items just for you.
+        </p>
 
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
+        <section class="form-container">
+            <form class="subscription-form" action="#" method="POST" aria-label="Newsletter Subscription">
+                <div class="input-group">
+                    <label for="email" class="sr-only">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Enter your email address"
+                        required
+                        aria-required="true"
+                    >
+                </div>
+                <button type="submit" class="btn-subscribe">Subscribe now</button>
+            </form>
 
-      .author-info a {
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- 
-    Join our newsletter
- 
-    Keep up with our latest collections, exclusive deals, and special offers! We introduce a new collection every week, so stay tuned to snag the hottest items just for you.
- 
-    Enter your email address
- 
-    Subscribe now
- 
-    Your email is 100% confidential and won’t send you any spam.
+            <p class="privacy-notice">
+                Your email is 100% confidential and won’t send you any spam.
+            </p>
+        </section>
+    </main>
 
-    -->
+    <footer class="author-info">
+        Coded by <a href="https://github.com/Henrydevlab">Henry</a> | Challenge by
+        <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>.
+    </footer>
 
-    <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
-      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
-        >devChallenges.io</a
-      >.
-    </div>
-  </body>
+</body>
 </html>
